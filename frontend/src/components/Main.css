@@ -1,0 +1,10 @@
+.main-background{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../public/images/discord_login_background.png'); /* Found image online at https://wall.alphacoders.com/big.php?i=1291249 */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
