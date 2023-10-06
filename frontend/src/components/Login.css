@@ -1,5 +1,137 @@
 .login-container{
     background-color: #313338;
-    max-width: 784px;
-    max-height: 408px;
+    width: 720px;
+    height: 344px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.35);
+    padding: 32px;
+    display: flex;
+}
+
+.login-left{
+    width: 414.22px;
+}
+
+.login-header, .login-subText{
+    text-align: center;
+}
+
+.login-header{
+    font-size: 24px;
+    line-height: 30px;
+    color: #f2f3f5;
+    margin-bottom: 8px;
+}
+
+.login-subText{
+    font-size: 16px;
+    line-height: 20px;
+    color: #b5bac1;
+}
+
+.login-formText{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    letter-spacing: .02em;
+    color: #b5bac1;
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 14px;
+    text-transform: uppercase;
+}
+
+.login-formInput{
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+    background-color: #1e1f22;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.login-forgotPassword{
+    margin-top: 4px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #00a8fc;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.login-forgotPassword:hover{
+    text-decoration: underline;
+}
+
+.login-asterisk{
+    color: #f23f42;
+}
+
+.login-button{
+    width: 100%;
+    background-color: #5865f2;
+    font-size: 16px;
+    line-height: 12px;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    padding: 15px 16px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.login-button:hover{
+    background-color: #4752c4;
+}
+
+.login-button:active{
+    background-color: #3c45a5;
+}
+
+.login-account{
+    color: #949ba4;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.login-register{
+    color: #00a8fc;
+    cursor: pointer;
+}
+
+.login-register:hover{
+    text-decoration: underline;
+}
+
+.login-right{
+    width: 240px;
+    height: 344px;
+    margin-left: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-qr{
+    width: 176px;
+    height: 176px;
+    border-radius: 3px;
+    margin-bottom: 32px;
+}
+
+.login-qr-header{
+    font-size: 24px;
+    line-height: 30px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.login-qr-subText{
+    font-size: 16px;
+    line-height: 20px;
+    color: #b5bac1;
+    text-align: center;
 }
