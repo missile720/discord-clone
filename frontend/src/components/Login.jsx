@@ -9,6 +9,7 @@ function Login() {
   return (
     <div className="login-container">
       <div className="login-left">
+        <div className="login-logo"></div>
         <h1 className="login-header">Welcome back!</h1>
         <p className="login-subText">We&apos;re so excited to see you again!</p>
         <form className="login-form" onSubmit={handleSubmit}>

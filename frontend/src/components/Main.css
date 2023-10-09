@@ -6,5 +6,10 @@
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+@media (min-width: 486px) {
+    .main-background{
+        align-items: center;
+    }
 }

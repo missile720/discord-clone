@@ -1,15 +1,25 @@
 .login-container{
     background-color: #313338;
-    width: 720px;
-    height: 344px;
     border-radius: 5px;
     box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.35);
     padding: 32px;
     display: flex;
+    justify-content: center;
 }
 
 .login-left{
-    width: 414.22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-logo{
+    display: none;
+    width: 130px;
+    height: 36px;
+    margin-bottom: 16px;
+    background-image: url('/images/discord-logo-white.svg');
+    background-repeat: no-repeat;
+    align-self: center;
 }
 
 .login-header, .login-subText{
@@ -134,4 +144,26 @@
     line-height: 20px;
     color: #b5bac1;
     text-align: center;
+}
+
+@media (max-width: 830px) {
+    .login-right{
+        display: none;
+    }
+}
+
+@media (max-width: 485px) {
+    .main-background{
+        align-items: stretch;
+    }
+
+    .login-container{
+        width: 100vw;
+        height: 100vh;
+        padding: 16px;
+    }
+
+    .login-logo{
+        display: block;
+    }
 }
