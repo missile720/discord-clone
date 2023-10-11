@@ -1,0 +1,158 @@
+.register-container{
+    background-color: #313338;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.35);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 416px;
+}
+
+.register-header{
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.register-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.register-formText{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    letter-spacing: .02em;
+    color: #b5bac1;
+    display: block;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.register-asterisk{
+    color: #f23f42;
+}
+
+.register-formInput{
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+    background-color: #1e1f22;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.register-formInput:focus{
+    outline: none;
+}
+
+.register-input-subtext{
+    height: 0;
+    overflow: hidden;
+    margin-top: -12px;
+    font-size: 13.5px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #d4d7db;
+    padding-bottom: 20px;
+    transition: all .3s ease-out;
+    opacity: 0;
+}
+
+.register-formInput-dateContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+
+
+#month-dropdown{
+    width: 35%;
+}
+
+#month{
+    width: 100%;
+}
+
+.register-formInput-date{
+    font-size: 16px;
+    color: #949ba4;
+    background-color: #1e1f22;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 8px;
+    width: 30%;
+}
+
+.register-formInput-date:focus{
+    outline: none;
+}
+
+.register-button{
+    width: 100%;
+    background-color: #5865f2;
+    font-size: 16px;
+    line-height: 12px;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    padding: 15px 16px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.register-button:hover{
+    background-color: #4752c4;
+}
+
+.register-button:active{
+    background-color: #3c45a5;
+}
+
+.register-disclaimer{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #949ba4;
+}
+
+.register-link{
+    text-decoration: none;
+    color: #00a8fc;
+    cursor: pointer;
+}
+
+.register-link:hover{
+    text-decoration: underline;
+}
+
+.register-login{
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+@media (max-width: 485px) {
+    .main-background{
+        align-items: stretch;
+    }
+
+    .register-container{
+        width: 100vw;
+        height: 100vh;
+        padding: 20px 16px;
+    }
+
+    .discord-logo{
+        display: block;
+    }
+}
