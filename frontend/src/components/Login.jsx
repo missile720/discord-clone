@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import "./Login.css";
 
 function Login() {
@@ -22,7 +23,7 @@ function Login() {
           <p className="login-forgotPassword">Forgot your password?</p>
           <button className="login-button">Log In</button>
           <p className="login-account">
-            Need an account? <span className="login-register">Register</span>
+            Need an account? <Link to="/register" style={{ textDecoration: 'none' }}><span className="login-register">Register</span></Link>
           </p>
         </form>
       </div>

@@ -1,5 +1,6 @@
-import { useState } from 'react'
-import './Register.css'
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './Register.css';
 
 function Register() {
   const [displayNameFocused, setDisplayNameFocused] = useState(false);
@@ -76,7 +77,7 @@ function Register() {
           </div>
           <button className="register-button">Continue</button>
           <p className='register-disclaimer'>By registering, you agree to Discord&apos;s <a href='https://discord.com/terms' target="_blank" rel="noreferrer" className='register-link'>Terms of Service</a> and <a href='https://discord.com/privacy' target="_blank" rel="noreferrer" className='register-link'>Privacy Policy</a>.</p>
-          <p className='register-link register-login'>Already have an account?</p>
+          <Link to="/" style={{ textDecoration: 'none' }}><p className='register-link register-login'>Already have an account?</p></Link>
         </form>
     </div>
   )
