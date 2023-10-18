@@ -1,11 +1,11 @@
+import MainWindow from './components/MainWindow'
 import './App.css'
-import Main from './components/Main'
 
 function App() {
 
   return (
     <>
-      <Main/>
+      <MainWindow/>
     </>
   )
 }
