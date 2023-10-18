@@ -9,6 +9,24 @@ function Register() {
     'January', 'February', 'March', 'April', 'May', 'June',
     'July', 'August', 'September', 'October', 'November', 'December'
   ];
+  const days = [];
+  const years = [];
+
+  for(let day = 1; day <= 31; day++){
+    days.push(
+      <option key={day} value={day}>
+        {day}
+      </option>
+    );
+  }
+
+  for(let year = 2020; year >= 1871; year--){
+    years.push(
+      <option key={year} value={year}>
+        {year}
+      </option>
+    );
+  }
 
   function handleFocus(setFocused, isFocused) {
     setFocused(!isFocused);
@@ -70,9 +88,11 @@ function Register() {
             </div>
             <select name="day" id="day" className='register-formInput-date' required>
                 <option value="" selected disabled hidden>Day</option>
+                {days}
             </select>
             <select name="year" id="year" className='register-formInput-date' required>
                 <option value="" selected disabled hidden>Year</option>
+                {years}
             </select>
           </div>
           <button className="register-button">Continue</button>
